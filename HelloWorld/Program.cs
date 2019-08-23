@@ -125,7 +125,26 @@ namespace HelloWorld
             johnsCar.make = "Chevy";
             johnsCar.model = "K1500";
 
-            johnsCar.Description(); 
+            johnsCar.Description();
+
+
+            // integer array of size 3
+            // and array is an object so the new key word is needed to allocat space the same
+            // way when we create an instance of a class.
+            // size cannot change.
+            int[] payment = new int[3];
+            payment[0] = 20;
+            payment[1] = 16;
+            payment[2] = 45;
+
+            // faster and cleaner to initialize as such
+            int[] fasterPayment = new int[3] { 20, 16, 45 };
+
+            for(int j = 0; i < fasterPayment.Length; j++)
+            {
+                Console.WriteLine("Your payment is: {0}",fasterPayment[j]);
+            }
+
 
         }
     }
